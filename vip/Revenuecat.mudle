@@ -1,0 +1,26 @@
+#!name=RevenueCat Universal edit
+#!desc=Converted from QuantumultX Rewrite
+
+[Script]
+# Delete header (request) — converted from script-request-header
+http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) script-path=https://shoptnetz.com/shadowrocket/delete_header.js, timeout=60
+
+# Response body scripts (requires body)
+http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$) requires-body=true, script-path=https://raw.githubusercontent.com/Sultan11duck/Script/main/js/revenuecat.js, timeout=60
+http-response ^https?:\/\/(?:api\.(?:revenuecat|rc-backup)|isi\.csan\.goodnotes\.com|rc\.visionarytech\.ltd)\/.+\/(receipts$|subscribers\/?(.*?)*$|offers$) requires-body=true, script-path=https://raw.githubusercontent.com/Sultan11duck/Script/main/js/revenuecat.js, timeout=60
+
+[URL Rewrite]
+# Redirect specific subscribers endpoint to product_entitlement_mapping (302/307 conversion)
+^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/(?!.*\/(offerings|attributes|adservices_attribution)$).* 307 https://api.revenuecat.com/v1/product_entitlement_mapping
+
+[Header Rewrite]
+# Delete / normalize X-RevenueCat-ETag headers (case variations)
+^https?:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) request-header X-RevenueCat-ETag delete
+^https?:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) request-header x-revenuecat-etag delete
+
+# If you need to remove header from endpoints with offerings/attributes specifically
+^https?:\/\/api\.revenuecat\.com\/.+\/subscribers\/[^/]+\/(offerings|attributes) request-header X-RevenueCat-ETag delete
+^https?:\/\/api\.revenuecat\.com\/.+\/subscribers\/[^/]+\/(offerings|attributes) request-header x-revenuecat-etag delete
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com, api.rc-backup.com
