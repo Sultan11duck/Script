@@ -1,0 +1,14 @@
+#!name=iTunes-系列解锁合
+#!desc=iTunes-系列解锁合
+
+[Script]
+iTunes = type=http-response, pattern=https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true, max-size=-1, timeout=60
+
+buyitunes = type=http-response, pattern=https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://gist.githubusercontent.com/ddgksf2013/9e0f6c7341beea09a31aa309d9d7f502/raw/buyitunes.js, requires-body=true, max-size=-1, timeout=60
+
+APPheji_iTunes = type=http-response, pattern=https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/Guding88/Script/main/APPheji_iTunes.js, requires-body=true, max-size=-1, timeout=60
+
+iTunes = type=http-response, pattern=https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/iTunes.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
