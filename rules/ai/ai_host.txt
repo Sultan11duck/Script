@@ -1,0 +1,739 @@
+#NVIDIA
+DOMAIN-KEYWORD,.ai
+DOMAIN-KEYWORD,ai
+DOMAIN-SUFFIX,build.nvidia.com
+DOMAIN-SUFFIX,integrate.api.nvidia.com
+DOMAIN-SUFFIX,api.ngc.nvidia.com
+DOMAIN-SUFFIX,brand-assets.cne.ngc.nvidia.com
+DOMAIN-SUFFIX,ngc.nvidia.com
+# Gemini
+DOMAIN-SUFFIX,labs.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
+DOMAIN-SUFFIX,alkalimetricsink-pa.clients6.google.com
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,labs.google
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,content-developerprofiles-pa.googleapis.com
+# OpenAI
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,openai.fm
+DOMAIN-SUFFIX,www.openai.fm
+DOMAIN-SUFFIX,cookbook.openai.com
+DOMAIN-SUFFIX,ios.chat.openai.com
+DOMAIN-SUFFIX,android.chat.openai.com
+DOMAIN-SUFFIX,desktop.chat.openai.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,operator.chatgpt.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,files.oaiusercontent.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,cdn.auth0.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,chat.openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN-SUFFIX,openaicomproductionae4b.blob.core.windows.net
+DOMAIN-SUFFIX,production-openaicom-storage.azureedge.net
+# nexus-websocket-a.intercom.io
+DOMAIN-SUFFIX,openai-api.arkoselabs.com
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+# ChatGPT voice mode TCP 443 request
+DOMAIN-SUFFIX,turn.livekit.cloud
+# ChatGPT voice mode UDP 3478 request 
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,browser-intake-datadoghq.com
+DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN-SUFFIX,featureassets.org
+# Sora
+DOMAIN-SUFFIX,www.sora.com
+DOMAIN-SUFFIX,sora-cdn.oaistatic.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,videos.openai.com
+DOMAIN-SUFFIX,openaicom.imgix.net,REJECT 
+DOMAIN-SUFFIX,o33249.ingest.sentry.io,REJECT
+DOMAIN-SUFFIX,o315582.ingest.sentry.io,REJECT
+DOMAIN-SUFFIX,o245571.ingest.sentry.io,REJECT
+# Stripe and IAP revenuecat
+DOMAIN-SUFFIX,js.stripe.com  
+DOMAIN-SUFFIX,m.stripe.com 
+DOMAIN-SUFFIX,r.stripe.com 
+DOMAIN-SUFFIX,api.stripe.com 
+DOMAIN-SUFFIX,m.stripe.network 
+DOMAIN-SUFFIX,b.stripecdn.com 
+DOMAIN-SUFFIX,merchant-ui-api.stripe.com
+DOMAIN-SUFFIX,stripe-camo.global.ssl.fastly.net
+DOMAIN-SUFFIX,stripe.com 
+DOMAIN-SUFFIX,hcaptcha.com 
+DOMAIN-SUFFIX,api2.hcaptcha.com 
+DOMAIN-SUFFIX,api.revenuecat.com 
+# Claude Meta and poe
+DOMAIN-SUFFIX,cdn.usefathom.com
+DOMAIN-SUFFIX,api.anthropic.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,www.claudeusercontent.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,api3.siftscience.com
+DOMAIN-SUFFIX,o1158394.ingest.us.sentry.io,REJECT
+# aws bedrock
+DOMAIN-SUFFIX,console.api.aws
+DOMAIN-SUFFIX,notifications.aws.dev
+DOMAIN-SUFFIX,bedrock.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,bedrock.us-east-2.amazonaws.com
+DOMAIN-SUFFIX,bedrock.us-west-2.amazonaws.com
+DOMAIN-SUFFIX,bedrock-runtime.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,bedrock-runtime.us-east-2.amazonaws.com
+DOMAIN-SUFFIX,bedrock-runtime.us-west-2.amazonaws.com
+DOMAIN-SUFFIX,bedrock-agent.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,bedrock-agent.us-west-2.amazonaws.com
+DOMAIN-SUFFIX,bedrock-agent-runtime.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,bedrock-agent-runtime.us-west-2.amazonaws.com
+# Perplexity
+DOMAIN-SUFFIX,fscdn.eppo.cloud
+DOMAIN-SUFFIX,pplx-res.cloudinary.com
+# Mistral
+# Voice
+DOMAIN-SUFFIX,api.elevenlabs.io
+DOMAIN-SUFFIX,api.us.elevenlabs.io
+DOMAIN-SUFFIX,elevenlabs.io
+# Jina
+# Search
+DOMAIN-SUFFIX,api.tavily.com
+DOMAIN-SUFFIX,docs.tavily.com
+DOMAIN-SUFFIX,tavily.com
+DOMAIN-SUFFIX,api.search.brave.com
+# RAG
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,api.voyageai.com
+DOMAIN-SUFFIX,voyageai.com
+# Cluster
+DOMAIN-SUFFIX,api.groq.com
+DOMAIN-SUFFIX,api.together.xyz
+DOMAIN-SUFFIX,api.replicate.com
+DOMAIN-SUFFIX,api.eu.nebius.cloud
+DOMAIN-SUFFIX,nebius.cloud
+DOMAIN-SUFFIX,nebius.com
+DOMAIN-SUFFIX,api.hyperbolic.xyz
+DOMAIN-SUFFIX,hyperbolic.xyz
+# Arena
+# Hugging Face
+DOMAIN-SUFFIX,cdn-avatars.huggingface.co
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,api.hf.space
+DOMAIN-SUFFIX,hf.space
+DOMAIN-SUFFIX,token.awswaf.com
+DOMAIN-SUFFIX,edge.sdk.awswaf.com
+DOMAIN-SUFFIX,cdn-lfs-us-1.hf.co
+DOMAIN-SUFFIX,distill.pub
+DOMAIN-SUFFIX,cdn.plot.ly
+# IDEs
+DOMAIN-SUFFIX,docs.cursor.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,docs.codeium.com
+DOMAIN-SUFFIX,codeium.co
+DOMAIN-SUFFIX,api.github.com
+DOMAIN-SUFFIX,api.individual.githubcopilot.com
+DOMAIN-SUFFIX,telemetry.individual.githubcopilot.com
+DOMAIN-SUFFIX,individual.githubcopilot.com
+# incident.io
+DOMAIN-SUFFIX,incident.io
+DOMAIN-SUFFIX,js.qualified.com
+# Other LLMs
+DOMAIN-SUFFIX,grok.comm
+DOMAIN-SUFFIX,useparagon.com
+DOMAIN-SUFFIX,tch.poe.com
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,cf2.poecdn.net
+DOMAIN-SUFFIX,ai.meta.com
+DOMAIN-SUFFIX,ai.gitee.com
+DOMAIN-SUFFIX,beeai.dev
+DOMAIN-SUFFIX,runpulse.com
+DOMAIN-SUFFIX,diabrowser.engineering
+DOMAIN-SUFFIX,karpathy.bearblog.dev
+# You.com
+DOMAIN-SUFFIX,auth.you.com
+DOMAIN-SUFFIX,cdn.you.com
+DOMAIN-SUFFIX,you.com
+DOMAIN-SUFFIX,cmp.osano.com
+DOMAIN-SUFFIX,web.stytch.com
+DOMAIN-SUFFIX,app.launchdarkly.com
+DOMAIN-SUFFIX,clientstream.launchdarkly.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,api-private.atlassian.com
+DOMAIN-SUFFIX,public.atl-paas.net
+# Loom
+DOMAIN-SUFFIX,cdn.loom.com
+DOMAIN-SUFFIX,luna.loom.com
+DOMAIN-SUFFIX,loom.com
+# fern docs
+DOMAIN-SUFFIX,ferndocs.com
+DOMAIN-SUFFIX,app.buildwithfern.com
+DOMAIN-SUFFIX,files.buildwithfern.com
+DOMAIN-SUFFIX,buildwithfern.com
+DOMAIN-SUFFIX,us-assets.i.posthog.com
+DOMAIN-SUFFIX,eu-assets.i.posthog.com
+DOMAIN-SUFFIX,algolia.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,coze.com
+DOMAIN-SUFFIX,ciciai.com
+DOMAIN-SUFFIX,civitai.com
+DOMAIN-SUFFIX,api.fish.audio
+DOMAIN-SUFFIX,fish.audio
+DOMAIN-SUFFIX,monica.im
+DOMAIN-SUFFIX,manus.im
+# Hugging Face de5282c3ca0c
+DOMAIN-SUFFIX,HOST-KEYWORD,de5282c3ca0c
+# > Paypal 
+DOMAIN-SUFFIX,USER-AGENT,PayPal*
+DOMAIN-SUFFIX,HOST-KEYWORD,paypal
+DOMAIN-SUFFIX,paypal.com
+# Nvidia
+# Gemini
+# OpenAI
+# Sora
+# Stripe IAP revenuecat
+# Claude
+# Claude iOS app Sift API
+# Model Context Protocol (MCP)
+DOMAIN-SUFFIX,modelcontextprotocol.io
+# aws bedrock
+# Perplexity
+# Mistral
+# Voice
+# Jina
+DOMAIN-SUFFIX,jina-ai-gmbh.gDOMAIN.io
+DOMAIN-SUFFIX,img.spacergif.org
+# Search
+# RAGs
+DOMAIN-SUFFIX,trychroma.com
+# Cluster
+# Arena
+# Hugging Face
+# IDEs
+DOMAIN-SUFFIX,zed.dev
+# incident.io
+# ##### Ilon Mask
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,mixpanel.com
+#https://pb.jiedianxielou.workers.dev/~GPT_AI:zXNaEztXNe7ahRwE3YfzFTMh
+# ##### Ilon Mask
+DOMAIN-SUFFIX,pb.jiedianxielou.workers.dev
+DOMAIN-SUFFIX,.comchat.com
+DOMAIN-SUFFIX,chat.bewildcard.com
+DOMAIN-SUFFIX,electronhub.top
+DOMAIN-SUFFIX,bewildcard.com
+DOMAIN-SUFFIX,api2.gptsapi.net
+DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,fengkongcloud.cn
+DOMAIN-SUFFIX,fengkongcloud.com
+DOMAIN-SUFFIX,portal101.cn
+DOMAIN-SUFFIX,portal101.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercom.com
+DOMAIN-SUFFIX,intercomcdn.com
+# black forest lab
+# Replicate
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,www.replicatestatus.com
+DOMAIN-SUFFIX,replicate.delivery
+# deepseek
+DOMAIN-SUFFIX,api.deepseek.com
+DOMAIN-SUFFIX,cdn.deepseek.com
+DOMAIN-SUFFIX,platform.deepseek.com
+DOMAIN-SUFFIX,chat.deepseek.com
+DOMAIN-SUFFIX,deepseek.xyz
+DOMAIN-SUFFIX,deepseek.tech
+DOMAIN-SUFFIX,deepseekai.com
+DOMAIN-SUFFIX,deepseekai.xyz
+DOMAIN-SUFFIX,d1q6f0aelx0por.cloudfront.net
+DOMAIN-SUFFIX,d2wy8f7a9ursnm.cloudfront.net
+DOMAIN-SUFFIX,d36jcksde1wxzq.cloudfront.net
+DOMAIN-SUFFIX,compose-spec.io
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,dockerhub.com
+DOMAIN-SUFFIX,ip.sb
+DOMAIN-SUFFIX,Linux.do
+# Cursor
+DOMAIN-SUFFIX,api2.cursor.sh
+DOMAIN-SUFFIX,api3.cursor.sh
+DOMAIN-SUFFIX,api4.cursor.sh
+DOMAIN-SUFFIX,repo42.cursor.sh
+DOMAIN-SUFFIX,us-eu.gcpp.cursor.sh
+DOMAIN-SUFFIX,us-asia.gcpp.cursor.sh
+DOMAIN-SUFFIX,us-only.gcpp.cursor.sh
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,marketplace.cursorapi.com
+DOMAIN-SUFFIX,cursor.sh
+# Gemini
+DOMAIN-SUFFIX,jules.google.com
+DOMAIN-SUFFIX,flow.google.com
+DOMAIN-SUFFIX,deepmind.google.com
+DOMAIN-SUFFIX,ai.dev
+DOMAIN-SUFFIX,ai.studio
+DOMAIN-SUFFIX,withgoogle.com
+# OpenAI
+DOMAIN-SUFFIX,academy.openai.com
+DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com
+# Stripe IAP revenuecat
+# Claude
+DOMAIN-SUFFIX,transformer-circuits.pub
+DOMAIN-SUFFIX,www.neuronpedia.org
+# aws bedrock
+# Perplexity
+# Mistral
+# Voice
+# Jina
+DOMAIN-SUFFIX,jina-ai-gmbh.ghost.io
+# Search
+# RAGs
+# Cluster
+# Arena
+# Hugging Face
+# Cursor
+# IDEs
+# incident.io
+# black forest lab
+# Replicate 
+# Others
+# Nvidia
+# Gemini
+# OpenAI
+# DOMAIN,nexus-websocket-a.intercom.io
+# ChatGPT voice mode TCP 443 request 
+# ChatGPT voice mode UDP 3478 request
+# Sora
+# Stripe IAP revenuecat
+# Claude
+# Claude iOS app Sift API
+# Model Context Protocol (MCP)
+# aws bedrock
+# Perplexity
+# Mistral
+# Voice
+# Jina
+# Search
+# RAGs
+# Cluster
+# Arena
+# Hugging Face
+# Cursor
+# IDEs
+# incident.io
+# black forest lab
+# Replicate 
+# Others
+DOMAIN-SUFFIX,chat.openai.com
+DOMAIN-SUFFIX,platform.openai.com
+DOMAIN-SUFFIX,api.openai.com
+DOMAIN-SUFFIX,auth0.openai.com
+DOMAIN-SUFFIX,cdn.openai.com
+DOMAIN-SUFFIX,labs.openai.com
+DOMAIN-SUFFIX,status.openai.com
+DOMAIN-SUFFIX,help.openai.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,js.intercomcdn.com
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,console.anthropic.com
+DOMAIN-SUFFIX,dashboard.anthropic.com
+DOMAIN-SUFFIX,accounts.anthropic.com
+DOMAIN-SUFFIX,console.deepseek.com
+DOMAIN-SUFFIX,dashboard.deepseek.com
+DOMAIN-SUFFIX,auth.deepseek.com
+DOMAIN-SUFFIX,gemini.app
+DOMAIN-SUFFIX,gemini.googleusercontent.com
+DOMAIN-SUFFIX,gemini-api.google.com
+DOMAIN-SUFFIX,ai.google
+DOMAIN-SUFFIX,cloud.google.com
+DOMAIN-SUFFIX,vertexai.googleapis.com
+DOMAIN-SUFFIX,ml.googleapis.com
+DOMAIN-SUFFIX,aiplatform.googleapis.com
+DOMAIN-SUFFIX,codey.googleapis.com
+DOMAIN-SUFFIX,imagen.googleapis.com
+DOMAIN-SUFFIX,lyria.googleapis.com
+DOMAIN-SUFFIX,veo.googleapis.com
+DOMAIN-SUFFIX,gemma.googleapis.com
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,projectastra.google.com
+DOMAIN-SUFFIX,projectmariner.google.com
+DOMAIN-SUFFIX,payload:
+#ä¸æ”¯æŒçš„è§„åˆ™æ•°é‡:0
+#å·²æŽ’é™¤çš„è§„åˆ™æ•°é‡:0
+#-----------------ä»¥ä¸‹ä¸ºè§£æžåŽçš„è§„åˆ™-----------------#
+DOMAIN-SUFFIX,asia-south1-livekit.grok.com
+DOMAIN-SUFFIX,assets.grok.com
+DOMAIN-SUFFIX,livekit.grok.com
+DOMAIN-SUFFIX,ssff.grok.com
+DOMAIN-SUFFIX,typeahead.grok.com
+DOMAIN-SUFFIX,ab.chatgpt.com
+DOMAIN-SUFFIX,arena.openai.com
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,beta.api.openai.com
+DOMAIN-SUFFIX,beta.openai.com
+DOMAIN-SUFFIX,blog.openai.com
+DOMAIN-SUFFIX,cdn.oaistatic.com
+DOMAIN-SUFFIX,community.openai.com
+DOMAIN-SUFFIX,contest.openai.com
+DOMAIN-SUFFIX,d.docs.live.net
+DOMAIN-SUFFIX,debate-game.openai.com
+DOMAIN-SUFFIX,discuss.openai.com
+DOMAIN-SUFFIX,gpt3-openai.com
+DOMAIN-SUFFIX,gym.openai.com
+DOMAIN-SUFFIX,microscope.openai.com
+DOMAIN-SUFFIX,mobile.events.data.microsoft.com
+DOMAIN-SUFFIX,spinningup.openai.com
+DOMAIN-SUFFIX,tcr9i.chat.openai.com
+DOMAIN-SUFFIX,universe.openai.com
+DOMAIN-SUFFIX,webrtc.chatgpt.com
+DOMAIN-SUFFIX,a-api.anthropic.com
+DOMAIN-SUFFIX,a-cdn.anthropic.com
+DOMAIN-SUFFIX,api-iam.intercom.io
+DOMAIN-SUFFIX,api.console.anthropic.com
+DOMAIN-SUFFIX,downloads.intercomcdn.com
+DOMAIN-SUFFIX,messenger-apps.intercom.io
+DOMAIN-SUFFIX,nexus-websocket-a.intercom.io
+DOMAIN-SUFFIX,s-cdn.anthropic.com
+DOMAIN-SUFFIX,static.intercomassets.com
+DOMAIN-SUFFIX,statsig.anthropic.com
+DOMAIN-SUFFIX,status.anthropic.com
+DOMAIN-SUFFIX,support.anthropic.com
+DOMAIN-SUFFIX,widget.intercom.io
+DOMAIN-SUFFIX,acctcdnmsftuswe2.azureedge.net
+DOMAIN-SUFFIX,browser.events.data.microsoft.com
+DOMAIN-SUFFIX,cdn.sapphire.microsoftapp.net
+DOMAIN-SUFFIX,chatgpt-async-webps-prod-eastus-2.chatgpt.com
+DOMAIN-SUFFIX,chatgpt-async-webps-prod-westus-2.chatgpt.com
+DOMAIN-SUFFIX,connect.garmin.com
+DOMAIN-SUFFIX,connectapi.garmin.com
+DOMAIN-SUFFIX,cookbook.openai.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,copilot-telemetry.githubusercontent.com
+DOMAIN-SUFFIX,dual-a-0001.a-msedge.net
+DOMAIN-SUFFIX,eagle.sapphire.microsoftapp.net
+DOMAIN-SUFFIX,edge.microsoft.com
+DOMAIN-SUFFIX,edgeservices.bing.com
+DOMAIN-SUFFIX,feedcdn.sapphire.microsoftapp.net
+DOMAIN-SUFFIX,forum.openai.com
+DOMAIN-SUFFIX,fpt2.microsoft.com
+DOMAIN-SUFFIX,gateway.bingviz.microsoftapp.net
+DOMAIN-SUFFIX,ghs.connect.garmin.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,glow.openai.com
+DOMAIN-SUFFIX,in.appcenter.ms
+DOMAIN-SUFFIX,ios.chat.openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,kc3.connect.garmin.com
+DOMAIN-SUFFIX,lgincdnmsftuswe2.azureedge.net
+DOMAIN-SUFFIX,location.microsoft.com
+DOMAIN-SUFFIX,manage.openai.auth0app.com
+DOMAIN-SUFFIX,model-spec.openai.com
+DOMAIN-SUFFIX,musenet-pg.openai.com
+DOMAIN-SUFFIX,musenet.openai.com
+DOMAIN-SUFFIX,nb-chatgpt.com
+DOMAIN-SUFFIX,omt.garmin.com
+DOMAIN-SUFFIX,opchatgpt.com
+DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,openai.fund
+DOMAIN-SUFFIX,openai.github.io
+DOMAIN-SUFFIX,openai.ikontra.com
+DOMAIN-SUFFIX,openai.intercom-attachments-7.com
+DOMAIN-SUFFIX,openai.openthinklabs.com
+DOMAIN-SUFFIX,openai.qualtrics.com
+DOMAIN-SUFFIX,pay.openai.com
+DOMAIN-SUFFIX,persistent.oaistatic.com
+DOMAIN-SUFFIX,sapphire.api.microsoftapp.net
+DOMAIN-SUFFIX,self.events.data.microsoft.com
+DOMAIN-SUFFIX,services.bingapis.com
+DOMAIN-SUFFIX,sydney.bing.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,openai.com
+# åŸŸååŒ¹é…
+DOMAIN-SUFFIX,files.anthropic.com
+DOMAIN-SUFFIX,prod.files.anthropic.com
+# åŸŸåå…³é”®å­—åŒ¹é…
+HOST-KEYWORD,anthropic
+HOST-KEYWORD,chatgpt
+HOST-KEYWORD,claude
+HOST-KEYWORD,cloudflare
+HOST-KEYWORD,poe
+HOST-KEYWORD,cohere
+HOST-KEYWORD,deepl
+HOST-KEYWORD,deepmind
+HOST-KEYWORD,gemini
+HOST-KEYWORD,grok
+HOST-KEYWORD,midjourney
+HOST-KEYWORD,nexon
+HOST-KEYWORD,openai
+HOST-KEYWORD,perplexity
+HOST-KEYWORD,replicate
+HOST-KEYWORD,runwayml
+HOST-KEYWORD,stability
+# åŸŸååŽç¼€åŒ¹é…
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,amazonaws.com
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,cdn.anthropic.com
+DOMAIN-SUFFIX,cdn.discordapp.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,cloudflareinsights.com
+DOMAIN-SUFFIX,docs.anthropic.com
+DOMAIN-SUFFIX,docker.internal
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,help.anthropic.com
+DOMAIN-SUFFIX,hooks.anthropic.com
+DOMAIN-SUFFIX,logging.anthropic.com
+DOMAIN-SUFFIX,mail.anthropic.com
+DOMAIN-SUFFIX,newsletter.anthropic.com
+DOMAIN-SUFFIX,prod.anthropic.com
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,research.anthropic.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,stripe.network
+DOMAIN-SUFFIX,stripecdn.com
+DOMAIN-SUFFIX,wp.anthropic.com
+DOMAIN-SUFFIX,ws-production.anthropic.com
+DOMAIN-SUFFIX,ws.openai.com
+DOMAIN-SUFFIX, openai.com
+DOMAIN-SUFFIX, chatgpt.com
+DOMAIN-SUFFIX, anthropic.com
+DOMAIN-SUFFIX, ai21.com
+DOMAIN-SUFFIX, alephalpha.com
+DOMAIN-SUFFIX, openassistant.org
+DOMAIN-SUFFIX, synthesia.io
+DOMAIN-SUFFIX, runwayml.com
+DOMAIN-SUFFIX, filmora.wondershare.com
+DOMAIN-SUFFIX, opusclip.com
+DOMAIN-SUFFIX, fathom.video
+DOMAIN-SUFFIX, n8n.io
+DOMAIN-SUFFIX, rytr.me
+DOMAIN-SUFFIX, sudowrite.com
+DOMAIN-SUFFIX, vistasocial.com
+DOMAIN-SUFFIX, feedhive.io
+DOMAIN-SUFFIX, scribehow.com
+DOMAIN-SUFFIX, langchain.com
+DOMAIN-SUFFIX, single-store.com
+DOMAIN-SUFFIX, tensorflow.org
+DOMAIN-SUFFIX, llama.com
+DOMAIN-SUFFIX,phind.com
+DOMAIN-SUFFIX,consensus.app
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,tldv.io
+DOMAIN-SUFFIX,gamma.app
+DOMAIN-SUFFIX,tome.app
+DOMAIN-SUFFIX,slidesai.io
+DOMAIN-SUFFIX,databricks.com
+DOMAIN-SUFFIX,dataiku.com
+DOMAIN-SUFFIX,scale.com
+DOMAIN-SUFFIX,azure.microsoft.com
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,watson.ibm.com
+DOMAIN-SUFFIX,feedhive.com
+DOMAIN-SUFFIX,vista.social
+DOMAIN-SUFFIX,hootsuite.com
+DOMAIN-SUFFIX,buffer.com
+DOMAIN-SUFFIX,taplio.com
+DOMAIN-SUFFIX,surfer.com
+DOMAIN-SUFFIX,clearscope.io
+DOMAIN-SUFFIX,tidio.com
+DOMAIN-SUFFIX,zendesk.com
+DOMAIN-SUFFIX,teal.com
+DOMAIN-SUFFIX,kickresume.com
+DOMAIN-SUFFIX,enhancv.com
+DOMAIN-SUFFIX,textio.com
+DOMAIN-SUFFIX,oai.azure.com
+DOMAIN-SUFFIX,api.o.openai.com
+DOMAIN-SUFFIX,api-staging.anthropic.com
+DOMAIN-SUFFIX,api-experimental.anthropic.com
+DOMAIN-SUFFIX,api.gemini.google.com
+DOMAIN-SUFFIX,us-central1-aiplatform.googleapis.com
+DOMAIN-SUFFIX,europe-west4-aiplatform.googleapis.com
+DOMAIN-SUFFIX,ai.googleapis.com
+DOMAIN-SUFFIX,openrouter.dev
+DOMAIN-SUFFIX,vscode-copilot.githubusercontent.com
+DOMAIN-SUFFIX,api.githubcopilot.com
+DOMAIN-SUFFIX,vscode.dev
+DOMAIN-SUFFIX,insiders.vscode.dev
+DOMAIN-SUFFIX,online.visualstudio.com
+DOMAIN-SUFFIX,plugins.jetbrains.com
+DOMAIN-SUFFIX,api-inference.nvidia.com
+DOMAIN-SUFFIX,model-api.tabnine.com
+DOMAIN-SUFFIX,api.kite.com
+DOMAIN-SUFFIX,api.sourcegraph.com
+DOMAIN-SUFFIX,completion.kite.com
+DOMAIN-SUFFIX,api.replit.com
+DOMAIN-SUFFIX,api.aws.codewhisperer.amazon.com
+DOMAIN-SUFFIX,chat.aws.codewhisperer.amazon.com
+DOMAIN-SUFFIX,api.adrenaline.dev
+DOMAIN-SUFFIX,api.minimax.chat
+DOMAIN-SUFFIX,api.aleph-alpha.com
+DOMAIN-SUFFIX,api.anyscale.com
+DOMAIN-SUFFIX,llama-api.meta.com
+DOMAIN-SUFFIX,httpbin.org
+DOMAIN-SUFFIX,alexa.huggingface.co
+DOMAIN-SUFFIX,api-audio-frontend.huggingface.co
+DOMAIN-SUFFIX,api-audio.huggingface.co
+DOMAIN-SUFFIX,api.autonlp.huggingface.co
+DOMAIN-SUFFIX,api.autotrain.huggingface.co
+DOMAIN-SUFFIX,api.endpoints.huggingface.co
+DOMAIN-SUFFIX,api-inference-staging.huggingface.co
+DOMAIN-SUFFIX,api-staging.autonlp.huggingface.co
+DOMAIN-SUFFIX,api-staging.autotrain.huggingface.co
+DOMAIN-SUFFIX,autonlp.huggingface.co
+DOMAIN-SUFFIX,autotrain.huggingface.co
+DOMAIN-SUFFIX,banana.huggingface.co
+DOMAIN-SUFFIX,bananarama.huggingface.co
+DOMAIN-SUFFIX,bigscience-forum.huggingface.co
+DOMAIN-SUFFIX,bigscience.huggingface.co
+DOMAIN-SUFFIX,billing.api-inference.huggingface.co
+DOMAIN-SUFFIX,cdn-datasets.huggingface.co
+DOMAIN-SUFFIX,cdn.huggingface.co
+DOMAIN-SUFFIX,cdn-lfs-dev.huggingface.co
+DOMAIN-SUFFIX,cdn-lfs.huggingface.co
+DOMAIN-SUFFIX,cdn-media.huggingface.co
+DOMAIN-SUFFIX,cdn-thumbnails.huggingface.co
+DOMAIN-SUFFIX,cdn-uploads.huggingface.co
+DOMAIN-SUFFIX,collaborative-training-auth.huggingface.co
+DOMAIN-SUFFIX,convai.huggingface.co
+DOMAIN-SUFFIX,convai-proxy.huggingface.co
+DOMAIN-SUFFIX,coref.huggingface.co
+DOMAIN-SUFFIX,crow.api.huggingface.co
+DOMAIN-SUFFIX,crow.api-inference.huggingface.co
+DOMAIN-SUFFIX,datasets-server.huggingface.co
+DOMAIN-SUFFIX,dell.huggingface.co
+DOMAIN-SUFFIX,dinosaur.huggingface.co
+DOMAIN-SUFFIX,discuss.bigscience.huggingface.co
+DOMAIN-SUFFIX,elasticsearch.huggingface.co
+DOMAIN-SUFFIX,eu-west-1.aws.endpoints.huggingface.co
+DOMAIN-SUFFIX,games.huggingface.co
+DOMAIN-SUFFIX,grafana.huggingface.co
+DOMAIN-SUFFIX,hello.default.api.infinity.huggingface.co
+DOMAIN-SUFFIX,hi.huggingface.co
+DOMAIN-SUFFIX,home.huggingface.co
+DOMAIN-SUFFIX,hub-ci.huggingface.co
+DOMAIN-SUFFIX,huggingface.com
+DOMAIN-SUFFIX,huggingfaceh4-open-llm-leaderboard.hf.space
+DOMAIN-SUFFIX,huggingfaceh4-zephyr-chat.hf.space
+DOMAIN-SUFFIX,huggingfaceshouldhirematt.com
+DOMAIN-SUFFIX,huggingface.us17.list-manage.com
+DOMAIN-SUFFIX,hugging-nlp.huggingface.co
+DOMAIN-SUFFIX,infinity.huggingface.co
+DOMAIN-SUFFIX,instant-game.huggingface.co
+DOMAIN-SUFFIX,jarvis.huggingface.co
+DOMAIN-SUFFIX,katia.huggingface.co
+DOMAIN-SUFFIX,kibana.huggingface.co
+DOMAIN-SUFFIX,laksh.api-inference.huggingface.co
+DOMAIN-SUFFIX,landing.huggingface.co
+DOMAIN-SUFFIX,metrics.autonlp.huggingface.co
+DOMAIN-SUFFIX,metrics.autotrain.huggingface.co
+DOMAIN-SUFFIX,metrics-staging.autonlp.huggingface.co
+DOMAIN-SUFFIX,metrics-staging.autotrain.huggingface.co
+DOMAIN-SUFFIX,mongoku.huggingface.co
+DOMAIN-SUFFIX,moon-ci-docs.huggingface.co
+DOMAIN-SUFFIX,moon-preprod.huggingface.co
+DOMAIN-SUFFIX,moon-staging.huggingface.co
+DOMAIN-SUFFIX,netstats-range86-177.widgets-cors-proxy.huggingface.co
+DOMAIN-SUFFIX,neuralconvo-do.huggingface.co
+DOMAIN-SUFFIX,neuralconvo-ec2.huggingface.co
+DOMAIN-SUFFIX,neuralconvo.huggingface.co
+DOMAIN-SUFFIX,personas.huggingface.co
+DOMAIN-SUFFIX,pickaxe.huggingface.co
+DOMAIN-SUFFIX,preload.tensorboard.huggingface.co
+DOMAIN-SUFFIX,registry.dell.huggingface.co
+DOMAIN-SUFFIX,spaces.huggingface.co
+DOMAIN-SUFFIX,staging.api.huggingface.co
+DOMAIN-SUFFIX,staging.datasets-server.huggingface.co
+DOMAIN-SUFFIX,staging.huggingface.co
+DOMAIN-SUFFIX,status.huggingface.co
+DOMAIN-SUFFIX,store.huggingface.co
+DOMAIN-SUFFIX,stork.staging.api.huggingface.co
+DOMAIN-SUFFIX,sweet.huggingface.co
+DOMAIN-SUFFIX,tensorboard.huggingface.co
+DOMAIN-SUFFIX,test-adrien.api-inference.huggingface.co
+DOMAIN-SUFFIX,thumbnails.huggingface.co
+DOMAIN-SUFFIX,transformer.huggingface.co
+DOMAIN-SUFFIX,transformers.huggingface.co
+DOMAIN-SUFFIX,truebill.status.api-inference.huggingface.co
+DOMAIN-SUFFIX,ui.autonlp.huggingface.co
+DOMAIN-SUFFIX,ui.autotrain.huggingface.co
+DOMAIN-SUFFIX,ui.endpoints.huggingface.co
+DOMAIN-SUFFIX,ui-staging.autonlp.huggingface.co
+DOMAIN-SUFFIX,ui-staging.autotrain.huggingface.co
+DOMAIN-SUFFIX,uploads.huggingface.co
+DOMAIN-SUFFIX,uploads-staging.huggingface.co
+DOMAIN-SUFFIX,us-east-1.aws.endpoints.huggingface.co
+DOMAIN-SUFFIX,vqbjqfz3ldd42z6qff3t2h5cr62c5rok._domainkey.huggingface.co
+DOMAIN-SUFFIX,webchat.huggingface.co
+DOMAIN-SUFFIX,webchat-staging.huggingface.co
+DOMAIN-SUFFIX,webview.huggingface.co
+DOMAIN-SUFFIX,widgets-cors-proxy.huggingface.co
+# Manual list - Updated 2025-08-18
+DOMAIN-SUFFIX,palm.google.com
+DOMAIN-SUFFIX,chat.lmsys.org
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,grok.x.com
+DOMAIN-SUFFIX,andisearch.com
+DOMAIN-SUFFIX,metaphor.systems
+DOMAIN-SUFFIX,textcortex.com
+DOMAIN-SUFFIX,lex.page
+DOMAIN-SUFFIX,prosper.guide
+DOMAIN-SUFFIX,firefly.adobe.com
+DOMAIN-SUFFIX,deepai.org
+DOMAIN-SUFFIX,craiyon.com
+DOMAIN-SUFFIX,tensor.art
+DOMAIN-SUFFIX,playgroundai.com
+DOMAIN-SUFFIX,stablediffusionweb.com
+DOMAIN-SUFFIX,wellsaidlabs.com
+DOMAIN-SUFFIX,suno.com
+DOMAIN-SUFFIX,udio.com
+DOMAIN-SUFFIX,boomy.com
+DOMAIN-SUFFIX,soundraw.io
+DOMAIN-SUFFIX,continue.dev
+DOMAIN-SUFFIX,fauxpilot.com
+DOMAIN-SUFFIX,modal.com
+DOMAIN-SUFFIX,banana.dev
+DOMAIN-SUFFIX,lambda-labs.com
+DOMAIN-SUFFIX,writer.com
+DOMAIN-SUFFIX,glean.com
+DOMAIN-SUFFIX,assemblyai.com
+DOMAIN-SUFFIX,vernai.com
+DOMAIN-SUFFIX,yiyan.baidu.com
+DOMAIN-SUFFIX,tongyi.aliyun.com
+DOMAIN-SUFFIX,ai.mawdoo3.com
+DOMAIN-SUFFIX,sarah-ai.com
+DOMAIN-SUFFIX,dust.tt
+DOMAIN-SUFFIX,superagi.com
+# Auto-discovered list - Generated on 2025-08-18
+DOMAIN-SUFFIX,ai-cube.co.jp
+DOMAIN-SUFFIX,ai-line.co.jp
+DOMAIN-SUFFIX,ai-bot.net
+DOMAIN-SUFFIX,ai-ap.com
+DOMAIN-SUFFIX,ai-cube-jikkan.com
+DOMAIN-SUFFIX,ai-career.jp
+DOMAIN-SUFFIX,ai-int.co.jp
+DOMAIN-SUFFIX,ai-solutions.com
+DOMAIN-SUFFIX,ai-vision.co.jp
+DOMAIN-SUFFIX,ai-awakening.com
+DOMAIN-SUFFIX,ai-kaikei.com
+DOMAIN-SUFFIX,ai-hosting.de
+DOMAIN-SUFFIX,ai-medic.co.jp
