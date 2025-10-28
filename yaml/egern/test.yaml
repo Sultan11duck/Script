@@ -1,0 +1,722 @@
+ipv6: false
+http_port: 3090
+socks_port: 3090
+allow_external_connections: false
+vif_only: false
+bypass_tunnel_proxy:
+- '*.apple.com'
+hide_vpn_icon: false
+geoip_db_url: https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb
+asn_db_url: https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/GeoIP/GeoLite2-ASN.mmdb
+proxy_latency_test_url: http://1.0.0.1
+direct_latency_test_url: http://1.0.0.1
+compat_route: false
+include_all_networks: false
+include_cellular_services: false
+dns:
+  bootstrap:
+  - 85.203.37.2
+  - 85.203.37.1
+  upstreams:
+    expressvpn:
+    - https://85.203.37.2
+    - https://85.203.37.1
+    apple:
+    - https://doh.dns.apple.com/dns-query
+    cloud:
+    - 1.0.0.1
+    - 2606:4700:4700::1111
+    - 2606:4700:4700::1001
+    - 2606:4700::6810:f9f9
+    - 2606:4700::6810:f8f9
+    - 1.1.1.1
+    system:
+    - 45.90.28.133
+    https://dns.nextdns.io/67aa6d:
+    - https://2a07:a8c0::67:aa6d
+    - https://45.90.28.133
+    - tls://67aa6d.dns.nextdns.io
+    - quic://67aa6d.dns.nextdns.io
+    - https://dns.nextdns.io/67aa6d
+    8.8.8.8:
+    - https://8.8.8.8
+    adguard:
+    - tls://67aa6d.dns.nextdns.io
+    dns:
+    - 2a07:a8c0::9d:ed7d
+    - 2a07:a8c1::9d:ed7d
+    - tls://9ded7d.dns.nextdns.io
+    - https://dns.nextdns.io/9ded7d
+    anti:
+    - h3://2a07:a8c0::67:aa6d
+    - h3://dns.nextdns.io/67aa6d
+    - quic://67aa6d.dns.nextdns.io
+  public_ip_lookup_url: https://ifconfig.me/ip
+policy_groups:
+- select:
+    name: VPN
+    policies:
+    - DIRECT
+    - test
+    - '⏩10ium '
+    - F0rc3Run⏩
+    - ⏩ improxy
+    - QX📝
+    - LOCAL DOLROPBOX
+    - VPNw22
+    - sub.0664.net/proxies
+    - Q3dlaXpoaQ?
+    - ?target=Egern
+    - :CAXwsS32cN3sMFGDjWAew2CZ
+    - PROXY
+    - TEST
+    - EXTERNAL
+    - 'SELECTION ⭕ '
+    - 美国节点🇺🇸
+    - GlobalMedia📺
+    - Media⏩
+    - International🌍
+    - GLOBAL🌐
+    - The List
+    - 香港节点
+    - 台湾节点
+    - 日本节点🇯🇵
+    - 韩国节点🇰🇷
+    - Singapore🇸🇬
+    - ❌❌
+    - IPhone
+    flatten: false
+    filter: ^
+    icon: https://hub.nange.cn/IconSet/Color/Final.png
+    hidden: false
+- external:
+    name: test
+    type: select
+    urls:
+    - https://suc.ssltd.xyz/sub?target=surfboard&url=https%3A%2F%2Fraw.githubusercontent.com%2FFBI-tool%2Fclashnode%2Frefs%2Fheads%2Fmain%2Fsub%2Fsub_merge_yaml.yml%7Chttps%3A%2F%2Fgithub.com%2Ftgds100%2Fmyip%2Fraw%2Frefs%2Fheads%2Fmain%2FB64.txt%7Chttps://raw.githubusercontent.com/jagger235711/V2rayCollector/main/results/mixed_tested.txt
+    - https://sub.store/download/TESSSTTT?target=V2Ray
+    - https://litter.catbox.moe/he8lenoapote81vr.txt
+    urls_disabled:
+    - https://suc.ssltd.xyz/sub?target=surfboard&url=https%3A%2F%2Fraw.githubusercontent.com%2FFBI-tool%2Fclashnode%2Frefs%2Fheads%2Fmain%2Fsub%2Fsub_merge_yaml.yml%7Chttps%3A%2F%2Fgithub.com%2Ftgds100%2Fmyip%2Fraw%2Frefs%2Fheads%2Fmain%2FB64.txt%7Chttps://raw.githubusercontent.com/jagger235711/V2rayCollector/main/results/mixed_tested.txt
+    - https://litter.catbox.moe/he8lenoapote81vr.txt
+    filter: 🇺🇸|美国|美利坚合众国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|华盛顿|内华达|蒙大纳|怀俄明州|菲尼克斯|阿尔伯克基|丹佛|UnitedStates|American|USA|United[^a-z]*States|美国|美利坚合众国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|华盛顿|内华达|蒙大纳|怀俄明州|菲尼克斯|阿尔伯克基|丹佛
+    hidden: false
+rules:
+- domain_suffix:
+    match: adapty.io
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: api.adapty.io
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/refs/heads/master/Regular%20Hosts.txt
+    policy: REJECT
+    disabled: false
+- geoip:
+    match: US
+    policy: VPN
+    no_resolve: false
+    disabled: false
+- asn:
+    match: cloudflare
+    policy: VPN
+    no_resolve: false
+    disabled: false
+- asn:
+    match: '13335'
+    policy: VPN
+    no_resolve: false
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/Sultan11duck/Script/main/rules/DNS/dns.txt
+    policy: VPN
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/LM-Firefly/Rules/refs/heads/master/Special/DNS.list
+    policy: VPN
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/w891363/xiaobaishihundan/refs/heads/main/RuleSet/STUN.yaml
+    policy: REJECT
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/lonecale/Rules/refs/heads/main/Surge/Rules/Ads_SukkaW.list
+    policy: REJECT
+    disabled: true
+- domain_suffix:
+    match: vk.com
+    policy: VPN
+    disabled: false
+- domain_suffix:
+    match: twimg.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: googlevideo.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: onlyfans.com
+    policy: VPN
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Advertising/Advertising.list
+    policy: REJECT
+    disabled: false
+- rule_set:
+    name: ❌
+    match: https://raw.githubusercontent.com/jnlaoshu/MySelf/refs/heads/main/Egern/Rule/Reject.yaml
+    policy: REJECT
+    disabled: false
+- geoip:
+    match: US
+    policy: VPN
+    no_resolve: true
+    disabled: true
+- rule_set:
+    match: https://pb.jiedianxielou.workers.dev/~Directory_test
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/.old/finelist
+    policy: DIRECT
+    disabled: true
+- rule_set:
+    name: AI LLM2
+    match: https://raw.githubusercontent.com/Sultan11duck/Script/refs/heads/main/rules/ai.list
+    policy: VPN
+    disabled: false
+- rule_set:
+    name: AI LLM
+    match: https://raw.githubusercontent.com/Sultan11duck/Script/refs/heads/main/rules/ai2.list
+    policy: VPN
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/netability/pa_lists/main/url_apple.txt
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/ElementRef/AboutConfig/main/filter/element.ref.direct.mixture.ini
+    policy: DIRECT
+    disabled: true
+- geoip:
+    match: SA
+    policy: VPN
+    no_resolve: true
+    disabled: true
+- asn:
+    match: '151569'
+    policy: VPN
+    no_resolve: false
+    disabled: true
+- rule_set:
+    match: https://pb.jiedianxielou.workers.dev/GDcZ
+    policy: REJECT
+    disabled: false
+- rule_set:
+    match: https://github.com/8wfield/memorandum/raw/refs/heads/main/Egern/Rule/Telegram.yaml
+    policy: DIRECT
+    disabled: false
+- asn:
+    match: Cloudflare
+    policy: VPN
+    no_resolve: true
+    disabled: false
+- geoip:
+    match: US
+    policy: VPN
+    no_resolve: true
+    disabled: true
+- geoip:
+    match: '019'
+    policy: VPN
+    no_resolve: true
+    disabled: true
+- rule_set:
+    match: https://github.com/mist-whisper/Egern/raw/master/Rule/AI/AI.yaml
+    policy: VPN
+    disabled: false
+- rule_set:
+    match: https://rule.kelee.one/Loon/AdGuardSDNSFilter.list
+    policy: REJECT
+    disabled: true
+- domain_wildcard:
+    match: .infinitynewtab.com
+    policy: DIRECT
+- rule_set:
+    match: https://github.com/DoingDog/rconvert/raw/refs/heads/main/big-data/fin-surge.txt
+    policy: REJECT
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/gemnioo/MixedCFWRules/main/Surge/Special.list
+    policy: VPN
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/gemnioo/MixedCFWRules/main/Surge/LLMs.list
+    policy: VPN
+    disabled: false
+- domain_wildcard:
+    match: scripthub.vercel.app
+    policy: DIRECT
+- rule_set:
+    match: https://pb.jiedianxielou.workers.dev/aJdK
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list
+    policy: DIRECT
+- geoip:
+    match: '142'
+    policy: DIRECT
+    no_resolve: false
+    disabled: true
+- rule_set:
+    match: https://raw.githubusercontent.com/sleaa17aol/Quantumultx/refs/heads/main/Rules/DIRECT/direct.list
+    policy: DIRECT
+    disabled: false
+- domain_wildcard:
+    match: api.rochathub.com
+    policy: DIRECT
+- domain_keyword:
+    match: inftab
+    policy: DIRECT
+- asn:
+    match: '13335'
+    policy: VPN
+    no_resolve: true
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/misha-tgshv/shadowrocket-configuration-file/refs/heads/release/rules/domains_refilter.list
+    policy: DIRECT
+    disabled: true
+- domain_wildcard:
+    match: api.ipawind.com
+    policy: ❌❌
+    disabled: true
+- rule_set:
+    match: apple
+    policy: DIRECT
+- rule_set:
+    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Unbreak.yaml
+    policy: VPN
+    update_interval: 86400
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Streaming.yaml
+    policy: DIRECT
+    update_interval: 86400
+    disabled: true
+- rule_set:
+    match: https://raw.githubusercontent.com/XiangwanGuan/Shadowrocket/main/Rules/Apple.list
+    policy: DIRECT
+    update_interval: 86400
+    disabled: true
+- rule_set:
+    match: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Egern/Ruleset/Global.yaml
+    policy: VPN
+    update_interval: 86400
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/mullvad/dns-blocklists/refs/heads/main/lists/doh/adblock/frellwits-swedish-hosts-file
+    policy: REJECT
+    disabled: false
+- default:
+    policy: VPN
+- rule_set:
+    match: https://github.com/listacc1sa/Rules/raw/main/Custom/direct.list
+    policy: VPN
+    disabled: true
+header_rewrites:
+- delete:
+    match: ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$)
+    name: X-RevenueCat-ETag
+    type: request
+- delete:
+    match: ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$)
+    name: x-revenuecat-etag
+    type: request
+- replace:
+    match: ^https:\/\/github\.com\/
+    name: Accept-Language
+    value: en-us
+    type: request
+- replace:
+    match: ^https:\/\/(raw|gist)\.githubusercontent\.com\/
+    name: Accept-Language
+    value: en-us
+    type: request
+scriptings:
+- http_response:
+    name: rrooxccgat
+    match: ^https://api\.rochathub\.com/inteco\.user\.v1\.UserRightsService/GetUserRights
+    script_url: https://pb.jiedianxielou.workers.dev/Ebja
+    body_required: true
+    binary_body: false
+    disabled: true
+- http_response:
+    name: revenuecat.com
+    match: ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$)
+    script_url: https://github.com/osinx/Script/raw/refs/heads/main/vip/revenuecat.js
+    body_required: true
+    disabled: true
+- http_response:
+    name: iosgods
+    match: https:\/\/iosgods\.com\/api\/core\/me$
+    script_url: https://raw.githubusercontent.com/SubTek/Script/refs/heads/main/Scripts/iosgodsprem.js
+    body_required: true
+- http_response:
+    name: iosgodsgrps.js
+    match: https:\/\/iosgods\.com\/menu\/igauthads\.js
+    script_url: https://raw.githubusercontent.com/SubTek/Script/refs/heads/main/Scripts/iosgodsgrps.js
+    body_required: true
+- http_response:
+    name: AppitTesters
+    match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+    script_url: https://apptesters.org/egern/iTunes.js
+    update_interval: 5
+    body_required: true
+- http_response:
+    name: AppGrTesters
+    match: ^https?:\/\/subscription\.grammarly\.com\/api\/v1\/subscription$
+    script_url: https://apptesters.org/egern/Grammarly.js
+    update_interval: 5
+    body_required: true
+- http_response:
+    name: AppeSTesters
+    match: api.esound.app/account
+    script_url: https://apptesters.org/egern/eSound.js
+    update_interval: 5
+    body_required: true
+- http_response:
+    name: AppQOTesters
+    match: api.qonversion.io/v1/user/init
+    script_url: https://apptesters.org/egern/qonversion.js
+    update_interval: 5
+    body_required: true
+    disabled: true
+- http_response:
+    name: AppSaTesters
+    match: api.sandbox.love/accounts/current
+    script_url: https://apptesters.org/egern/SandBox.js
+    update_interval: 5
+    body_required: true
+- http_response:
+    name: AppSSesters
+    match: subscriptions.songshift.com/validate
+    script_url: https://apptesters.org/egern/SongShift.js
+    update_interval: 5
+    body_required: true
+- http_response:
+    name: AppADBTesters
+    match: api.adblockpro.app/verify
+    script_url: https://apptesters.org/egern/AdblockPro.js
+    update_interval: 5
+    body_required: true
+- http_response:
+    name: AppADGTesters
+    match: ^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?)
+    script_url: https://apptesters.org/egern/AdGuardPro.js
+    update_interval: 5
+    body_required: true
+mitm:
+  enabled: true
+  ca_p12: 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
+  ca_passphrase: egern
+  hostnames:
+    includes:
+    - api.adapty.io
+    - buy.itunes.apple.com
+    - api.rochathub.com
+    - api.revenuecat.com
+    - gist.githubusercontent.com
+    - raw.githubusercontent.com
+    - github.com
+  hostnames_disabled:
+    includes:
+    - gist.githubusercontent.com
+    - raw.githubusercontent.com
+    - github.com
+modules:
+- url: https://raw.githubusercontent.com/obs1379/Egern/refs/heads/main/surge.qingr.moe_for_Egern.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/Neurogram-R/Surge/refs/heads/master/module/Sur2b.sgmodule
+  enabled: false
+- url: https://snippet.host/xgfrgp/raw
+  enabled: false
+- url: https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/main/AntiAD.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/chengkongyiban/Surge/main/modules/QX_to_Surge.sgmodule
+  enabled: true
+- url: https://github.com/NSRingo/LocationService/releases/download/v1.0.1/iRingo.LocationService.sgmodule
+  enabled: true
+- url: https://github.com/NSRingo/Maps/releases/download/v4.4.0/iRingo.Maps.sgmodule
+  compat_arguments:
+    GeoManifest.Dynamic.Config.CountryCode: SA
+  enabled: true
+- url: http://script.hub/file/_start_/https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/genpix.js/_end_/genpix.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Spotify%E5%8E%BB%E5%B9%BF%E5%91%8A.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/Spotify%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/001ProMax/Surge/refs/heads/main/Loon/Spotify.Dev.plugin/_end_/Spotify.sgmodule?type=loon-plugin&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://raw.githubusercontent.com/jnlaoshu/MySelf/refs/heads/main/Egern/Module/Panel.yaml
+  enabled: false
+- url: https://raw.githubusercontent.com/VthongVthongVthong/shadow/refs/heads/main/5in1.module
+  enabled: false
+- url: https://d.uguu.se/JLLboBgJ.txt
+  enabled: true
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/Spotify.lpx/_end_/Spotify.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/Surge/module/split/partY/YouTube.sgmodule
+  enabled: false
+- url: https://github.com/DualSubs/YouTube/releases/download/v1.5.11/DualSubs.YouTube.yaml
+  enabled: false
+- url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partA/Apple.sgmodule
+  enabled: false
+- url: http://script.hub/file/_start_/https://raw.githubusercontent.com/osinx/Script/refs/heads/main/vip/youtube.download.plugin/_end_/youtube.sgmodule?type=loon-plugin&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.sgmodule
+  compat_arguments:
+    AutoCC: 'true'
+  enabled: true
+- url: https://dpaste.org/SaRSt/raw
+  enabled: false
+- url: https://dpaste.org/fMTPf/raw
+  enabled: false
+- url: https://script.hub/file/_start_/https://kelee.one/Tool/Loon/Lpx/YouTubeSubtitlesTranslation.lpx/_end_/YouTubeSubtitlesTranslation.sgmodule?type=loon-plugin&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: http://script.hub/file/_start_/https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx/_end_/YouTube_remove_ads.sgmodule?type=loon-plugin&target=surge-module&del=true&jqEnabled=true
+  compat_arguments:
+    blockUpload: 'true'
+    blockShorts: trur
+    blockImmersive: 'false'
+    captionLang: ar
+    lyricLang: ar
+  enabled: false
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/main/Surge/Beta/Fileball%E7%BD%91%E7%9B%98%E6%8C%82%E8%BD%BD.beta.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Sub-Store.official.sgmodule
+  compat_arguments:
+    timeout: '480'
+  enabled: false
+- url: https://raw.githubusercontent.com/quoctin75/youtube/refs/heads/main/premium
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/wangyuyan666/Doumu/refs/heads/main/Plugin/Trancy.plugin/_end_/Trancy.sgmodule?type=loon-plugin&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://github.com/jnlaoshu/MySelf/raw/main/Egern/Module/Panel.yaml
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/Sultan11duck/Hxx/main/QX/Rewrites/crack.snippet/_end_/crack.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://github.com/DualSubs/Universal/releases/download/v1.7.3/DualSubs.Universal.sgmodule
+  compat_arguments:
+    Types: Translate
+    Languages[1]: AR
+    ShowOnly: 'true'
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/main/Module/3in1%20-%20Nightmarket%20Server/_end_/3in1%2520-%2520Nightmarket%2520Server.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://raw.githubusercontent.com/NightmarketServer/SoundCloudPlus/refs/heads/main/soundcloudplus.module
+  enabled: false
+- url: https://dpaste.org/cftAu/raw
+  enabled: false
+- name: Youtube (Music) Enhance📺
+  url: https://raw.githubusercontent.com/Maasea/sgmodule/refs/heads/master/YouTube.Enhance.sgmodule
+  compat_arguments:
+    屏蔽上传按钮: 'true'
+    屏蔽选段按钮: 'true'
+    屏蔽Shorts按钮: 'true'
+    字幕翻译语言: ar
+    歌词翻译语言: ar
+    启用调试模式: 'true'
+  enabled: false
+- name: YouTube 📺📺
+  url: https://raw.githubusercontent.com/XiangwanGuan/Shadowrocket/main/Release/Modules/YouTube.sgmodule
+  compat_arguments:
+    YouTube ·字幕翻译语言: ar
+    YouTube ·歌词翻译语言: ar
+  enabled: false
+- name: YouTube去广告📺
+  url: https://raw.githubusercontent.com/mist-whisper/Surge/refs/heads/master/Modules/YouTube_remove_ads.sgmodule
+  compat_arguments:
+    隐藏短视频按钮: ar
+  enabled: false
+- name: YouTube 视频 PIP📺
+  url: https://script.hub/file/_start_/https://raw.githubusercontent.com/ElementRef/AboutConfig/refs/heads/main/rewrite/maasea.youtube.conf/_end_/maasea.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://script.hub/file/_start_/http://local.text/_end_/local.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true&localtext=%23!name%3DRevenueCat%20Universal%20hack%0A%23!desc%3Dlocal%0A%0A%5BScript%5D%0Ahttp-response%20%5Ehttps%3F%3A%2F%2Fapi%5C.revenuecat%5C.com%2F.%2B%2F(receipts%24%7Csubscribers%2F%3F(.*%3F)*%24)%20header-del%20x-revenuecat-etag%0A%0Adelete_header%20%3D%20type%3Dhttp-request%2C%20pattern%3Dhttps%3A%5C%2F%5C%2Fapi%5C.revenuecat%5C.com%5C%2F.%2B%5C%2F(receipts%7Csubscribers)%2C%20script-path%3Dhttps%3A%2F%2Fshoptnetz.com%2Fshadowrocket%2Fdelete_header.js%2C%20timeout%3D60%0A%0Arevenuecat%20%3D%20type%3Dhttp-response%2C%20pattern%3Dhttps%3A%5C%2F%5C%2Fapi%5C.revenuecat%5C.com%5C%2F.%2B%5C%2F(receipts%24%7Csubscribers%5C%2F%5B%5E%2F%5D%2B%24)%2C%20script-path%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2FSultan11duck%2FScript%2Fmain%2Fjs%2Frevenuecat.js%2C%20requires-body%3Dtrue%2C%20max-size%3D-1%2C%20timeout%3D60%0A%0Arevenuecat%20%3D%20type%3Dhttp-response%2C%20pattern%3Dhttps%3F%3A%5C%2F%5C%2F((api%5C.(revenuecat%7Crc-backup)%7Cisi%5C.csan%5C.goodnotes)%5C.com%7Crc%5C.visionarytech%5C.ltd)%5C%2F.%2B%5C%2F(receipts%24%7Csubscribers%5C%2F%3F(.*%3F)*%24%7Coffers%24)%2C%20script-path%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2FSultan11duck%2FScript%2Fmain%2Fjs%2Frevenuecat.js%2C%20requires-body%3Dtrue%2C%20max-size%3D-1%2C%20timeout%3D60%0A%0Arevenuecat%20%3D%20type%3Dhttp-response%2C%20pattern%3D%5Ehttps%3A%5C%2F%5C%2Fapi%5C.revenuecat%5C.com%5C%2F.%2B%5C%2F(receipts%24%7Csubscribers%5C%2F%5B%5E%2F%5D%2B%24)%2C%20script-path%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2FSultan11duck%2FScript%2Fmain%2Fjs%2Frevenuecat.js%2C%20requires-body%3Dtrue%2C%20max-size%3D-1%2C%20timeout%3D60%0A%0A%5BMITM%5D%0Ahostname%20%3D%20%25APPEND%25%20api.revenuecat.com%2C%20api.rc-backup.com
+  enabled: false
+- url: https://script.hub/file/_start_/http://local.text/_end_/local.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true&localtext=https%3F%3A%5C%2F%5C%2Fapi%5C.revenuecat%5C.com%5C%2F.%2B%5C%2F(receipts%7Csubscribers)%20url%20script-request-header%20https%3A%2F%2Fshoptnetz.com%2Fshadowrocket%2Fdelete_header.js%0Ahttps%3F%3A%5C%2F%5C%2Fapi%5C.revenuecat%5C.com%5C%2F.%2B%5C%2F(receipts%24%7Csubscribers%5C%2F%5B%5E%2F%5D%2B%24)%20url%20script-response-body%20https%3A%2F%2Fraw.githubusercontent.com%2FSultan11duck%2FScript%2Fmain%2Fjs%2Frevenuecat.js%0Ahttps%3F%3A%5C%2F%5C%2F(%3F%3Aapi%5C.(%3F%3Arevenuecat%7Crc-backup)%7Cisi%5C.csan%5C.goodnotes%5C.com%7Crc%5C.visionarytech%5C.ltd)%5C%2F.%2B%5C%2F(receipts%24%7Csubscribers%5C%2F%3F(.*%3F)*%24%7Coffers%24)%20url%20script-response-body%20https%3A%2F%2Fraw.githubusercontent.com%2FSultan11duck%2FScript%2Fmain%2Fjs%2Frevenuecat.js%0A%5BMITM%5D%0Ahostname%20%3D%20api.revenuecat.com%2C%20api.rc-backup.com
+  enabled: false
+- url: https://script.hub/file/_start_/https://gist.githubusercontent.com/duccutegatre-art/f1a2db6ffe6c9261f861b49b3867a654/raw/cfcf1897a71ca14a267bfb3cb6915f3bb2a283c8/url.vippro_minhduc.sgmodule/_end_/url.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://script.hub/file/_start_/https://github.com/Mike-offers/Rewrite/raw/master/QuantumultX/AutoUnlockQonversion.js/_end_/AutoUnlockQonversion.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: true
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/Mikephie/Script/main/qx/adapty.js/_end_/adapty.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/Mikephie/Script/refs/heads/main/qx/adaptyhub.js/_end_/adaptyhub.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://raw.githubusercontent.com/Sultan11duck/Script/main/sgmodule/iTunes.sgmodule
+  enabled: true
+- url: https://github.com/sub-store-org/Sub-Store/raw/refs/heads/master/config/Egern.yaml
+  compat_arguments:
+    timeout: '240'
+    engine: jsc
+  enabled: false
+- url: 855&
+  enabled: false
+- url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/refs/heads/main/sgmodule/HTTPDNS.Block.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/流媒体解锁检测.official.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%20X.official.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/egerndaddy/Sub-Store/refs/heads/patch-2/config/Egern.yaml
+  compat_arguments:
+    timeout: '240'
+  enabled: false
+- url: https://dpaste.org/da0zo/raw
+  enabled: false
+- url: https://script.hub/file/_start_/https://github.com/king1x32/Quantumult-X/raw/refs/heads/main/fake-iap/fakeiAP-truecaller.conf/_end_/fakeiAP-truecaller.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/king1x32/Quantumult-X/main/rewrite/anti-revoke.conf/_end_/anti-revoke.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Egern.yaml
+  enabled: false
+- url: https://raw.githubusercontent.com/ShopAccVanQuoc/jsvippro/main/gpt/gpt.module
+  enabled: false
+- url: https://dpaste.org/gE9ih/raw
+  enabled: false
+- url: https://dpaste.org/Ss3nh/raw
+  enabled: false
+- url: https://dpaste.org/Ss3nh/raw
+  enabled: false
+- url: https://raw.githubusercontent.com/Sultan11duck/Script/refs/heads/main/yaml/rochat
+  enabled: true
+- url: https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Egern/Module/Panel.yaml
+  enabled: false
+- url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/refs/heads/main/sgmodule/DNS.beta.sgmodule
+  enabled: false
+- url: https://whatshub.top/sgmodule/ip-api.sgmodule
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/githubdulong/Script/master/raycast_pro_patch.js/_end_/raycast_pro_patch.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: true
+- url: https://github.com/acamboy/Scripts/raw/refs/heads/main/Loon/plugins/appleFuck.plugin
+  enabled: false
+- url: https://github.com/acamboy/Scripts/raw/refs/heads/main/Loon/plugins/AutoRC.plugin
+  enabled: false
+- url: https://github.com/yaoyaole0112/surge/raw/refs/heads/main/sgmodule/Enhances/Sub-Store(beta).sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Sub-info/Moore/Sub-info_Max.sgmodule
+  enabled: false
+- url: https://github.com/8wfield/memorandum/raw/refs/heads/main/Egern/Module/Github429.yaml
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/githubdulong/Script/master/raycast_pro_patch.js/_end_/raycast_pro_patch.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: true
+- url: Github 429
+  enabled: false
+- url: https://dpaste.org/qSOdx/raw
+  enabled: false
+- url: https://pb.jiedianxielou.workers.dev/fNQZ
+  enabled: true
+- url: https://github.com/QingRex/LoonKissSurge/raw/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Sub-Store.official.sgmodule
+  enabled: false
+- url: https://github.com/QingRex/LoonKissSurge/raw/refs/heads/main/Surge/Official/Spotify%20Plus.official.sgmodule
+  enabled: false
+- url: https://github.com/QingRex/LoonKissSurge/raw/main/Surge/Beta/YouTube%E7%BF%BB%E8%AF%91.beta.sgmodule
+  enabled: false
+- url: https://hub.quic.me/Module/General/CaptureMode.sgmodule
+  enabled: false
+- url: https://github.com/xOS/Config/raw/Her/Module/General/NetInfo.sgmodule
+  enabled: false
+- url: https://github.com/SubTek/Script/raw/main/Egern.yaml
+  enabled: false
+- url: https://github.com/Auniquesir/Tools/raw/refs/heads/X/Egern/Modules/%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AFX.official.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/Auniquesir/Tools/X/Egern/Modules/GPT%20%E5%8F%AF%E7%94%A8%E6%A3%80%E6%B5%8B.official.sgmodule
+  enabled: false
+- url: 🐈
+  enabled: false
+- url: https://dpaste.org/SNiRt/raw
+  enabled: false
+- url: https://script.hub/file/_start_/https://pb.jiedianxielou.workers.dev/xQZM/_end_/xQZM.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://raw.githubusercontent.com/Keywos/rule/refs/heads/main/module/Sub-Store-Mock--.sgmodule
+  enabled: false
+- url: https://github.com/hulesley/Personal/raw/refs/heads/X/Tool/Egern/Module/ADBlock.Spotify.yaml
+  enabled: false
+- url: https://pb.jiedianxielou.workers.dev/CEY3
+  enabled: false
+- url: https://github.com/Byronetyrone/Surgeconf/raw/461ce4969b58c8c029df7b0efce4aec769bd3880/Egerndeez.conf
+  enabled: false
+- url: AppRCTesters
+  enabled: false
+- name: 'SUB.STORE 🔀 EGERN '
+  url: https://raw.githubusercontent.com/8wfield/memorandum/refs/heads/main/Egern/Module/Sub-Store.yaml
+  enabled: false
+- url: https://github.com/NSRingo/TestFlight/releases/download/v3.4.0/iRingo.TestFlight.yaml
+  enabled: false
+- url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/IP-Check/Moore/IP-Check.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/refs/heads/master/Egern/Rewrite/YouTube.yaml
+  enabled: false
+- url: https://raw.githubusercontent.com/Mikephie/Script/refs/heads/main/surge/RevenueCat.sgmodule
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/lonely0811/olsd/102050c9821a90f8a31e53e75b4d0bac98debb12/TrueCaller1.conf/_end_/TrueCaller1.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: true
+- url: https://github.com/hientt53/surge/raw/f35cf99b9ec5dc4f222609faea1c415e04d302e3/modules/Truecaller.sgmodule
+  enabled: true
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/sooyaaabo/Loon/refs/heads/main/Plugin/iTunes.plugin/_end_/iTunes.sgmodule?type=loon-plugin&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://github.com/tori2105/iOS-App-Scripts/raw/main/config/tori.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/refs/heads/master/Egern/Rewrite/Sub-Store.yaml
+  enabled: false
+- url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Surge.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/mist-whisper/Surge/refs/heads/master/Modules/Spotify_remove_ads.sgmodule
+  enabled: false
+- url: https://github.com/Centralmatrix3/Matrix-io/raw/refs/heads/master/Egern/Rewrite/Spotify.yaml
+  enabled: false
+- url: https://github.com/SubTek/Script/raw/refs/heads/main/Egern/Egern.yaml
+  enabled: false
+- url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.egern.yaml
+  enabled: false
+- url: https://github.com/Script-Hub-Org/Script-Hub/raw/refs/heads/main/modules/script-hub.beta.egern.yaml
+  enabled: true
+- url: https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/Nicegram/Nicegram.sgmodule
+  enabled: false
+- url: https://github.com/BOBOLAOSHIV587/Rules/raw/refs/heads/main/JS/iTunes/iTunes.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/Mikephie/Script/refs/heads/main/surge/mcollections.sgmodule
+  enabled: false
+- name: Byronetyrone/Surgeconf
+  url: https://dpaste.org/N6siB/raw
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/osinx/Script/214cf348701550baa0f3c9a54c4da0c9f1898b92/vip/revenuecat.conf/_end_/revenuecat.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://raw.githubusercontent.com/sultan1sa/Rewrite/refs/heads/main/sgmodule/AllinOneRewrite2.sgmodule
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/Guding88/Script/main/Cubox.js/_end_/Cubox.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: true
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/documents.js/_end_/documents.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://pb.jiedianxielou.workers.dev/PyQw
+  enabled: false
+- url: https://github.com/QingRex/LoonKissSurge/raw/refs/heads/main/Surge/%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0%E6%8B%A6%E6%88%AA%E5%99%A8.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/Spotify%20Plus.official.sgmodule
+  enabled: false
+- url: AllinOneRewrite
+  enabled: false
+- url: https://script.hub/file/_start_/https://raw.githubusercontent.com/Yarmukhamedov/mitm/6367ad8094cb182e68201920204da8e0df35ad39/modules/AppHud.txt/_end_/AppHud.sgmodule?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
+  enabled: false
+- url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Egern.yaml
+  enabled: false
+- url: Youtube (Music) Enhance
+  enabled: false
+- url: https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.surge.sgmodule
+  enabled: true
