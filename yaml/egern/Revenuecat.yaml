@@ -1,0 +1,40 @@
+dns: {}
+header_rewrites:
+- delete:
+    match: ^https?://api\.revenuecat\.com/.+/(receipts$|subscribers/?(.*?)*$)
+    name: X-RevenueCat-ETag
+    type: response
+- delete:
+    match: ^https?://api\.revenuecat\.com/.+/(receipts$|subscribers/?(.*?)*$)
+    name: x-revenuecat-etag
+    type: response
+scriptings:
+- http_request:
+    name: delete_header
+    match: https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers)
+    script_url: https://shoptnetz.com/shadowrocket/delete_header.js
+    timeout: 60
+- http_response:
+    name: revenuecat
+    match: https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$)
+    script_url: https://raw.githubusercontent.com/Sultan11duck/Script/main/js/revenuecat.js
+    timeout: 60
+    body_required: true
+- http_response:
+    name: revenuecat
+    match: https?:\/\/((api\.(revenuecat|rc-backup)|isi\.csan\.goodnotes)\.com|rc\.visionarytech\.ltd)\/.+\/(receipts$|subscribers\/?(.*?)*$|offers$)
+    script_url: https://raw.githubusercontent.com/Sultan11duck/Script/main/js/revenuecat.js
+    timeout: 60
+    body_required: true
+- http_response:
+    name: revenuecat
+    match: ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$)
+    script_url: https://raw.githubusercontent.com/Sultan11duck/Script/main/js/revenuecat.js
+    timeout: 60
+    body_required: true
+- http_response:
+    name: RC-GN
+    match: ^https?:\/\/(api\.(revenuecat|rc-backup)|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$|offers$)
+    script_url: https://raw.githubusercontent.com/SubTek/Egern/refs/heads/main/Scripts/AutoRC.js
+    update_interval: 5
+    body_required: true
