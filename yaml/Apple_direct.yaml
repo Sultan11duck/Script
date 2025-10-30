@@ -1,0 +1,91 @@
+name: Apple_list
+description: Apple_list
+dns: {}
+rules:
+- domain_suffix:
+    match: apple.com.cn
+    policy: DIRECT
+- domain_suffix:
+    match: icloud.com.cn
+    policy: DIRECT
+- domain_suffix:
+    match: aaplimg.com
+    policy: DIRECT
+- domain_suffix:
+    match: apple.co
+    policy: DIRECT
+- domain_suffix:
+    match: apple.com
+    policy: DIRECT
+- domain_suffix:
+    match: apple.com.cn
+    policy: DIRECT
+- domain_suffix:
+    match: apple-cloudkit.com
+    policy: DIRECT
+- domain_suffix:
+    match: apple-mapkit.com
+    policy: DIRECT
+- domain_suffix:
+    match: appsto.re
+    policy: DIRECT
+- domain_suffix:
+    match: appstore.com
+    policy: DIRECT
+- domain_suffix:
+    match: cdn-apple.com
+    policy: DIRECT
+- domain_suffix:
+    match: icloud.com
+    policy: DIRECT
+- domain_suffix:
+    match: icloud.com.cn
+    policy: DIRECT
+- domain_suffix:
+    match: icloud-content.com
+    policy: DIRECT
+- domain_suffix:
+    match: itunes.com
+    policy: DIRECT
+- domain_suffix:
+    match: me.com
+    policy: DIRECT
+- domain_suffix:
+    match: mzstatic.com
+    policy: DIRECT
+- domain_keyword:
+    match: apple.com.akadns.net
+    policy: DIRECT
+- domain_keyword:
+    match: icloud.com.akadns.net
+    policy: DIRECT
+- ip_cidr:
+    match: 17.0.0.0/8
+    policy: no-resolve
+- ip_cidr:
+    match: 63.92.224.0/19
+    policy: no-resolve
+- ip_cidr:
+    match: 65.199.22.0/23
+    policy: no-resolve
+- ip_cidr:
+    match: 139.178.128.0/18
+    policy: no-resolve
+- ip_cidr:
+    match: 144.178.0.0/19
+    policy: no-resolve
+- ip_cidr:
+    match: 144.178.36.0/22
+    policy: no-resolve
+- ip_cidr:
+    match: 144.178.48.0/20
+    policy: no-resolve
+- ip_cidr:
+    match: 192.35.50.0/24
+    policy: no-resolve
+- ip_cidr:
+    match: 198.183.17.0/24
+    policy: no-resolve
+- ip_cidr:
+    match: 205.180.175.0/24
+    policy: no-resolve
