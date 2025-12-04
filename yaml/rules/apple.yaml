@@ -1,0 +1,127 @@
+name: Apple_list
+description: Apple_list
+dns: {}
+rules:
+- domain_suffix:
+    match: aaplimg.com
+    policy: DIRECT
+- domain_suffix:
+    match: apple.co
+    policy: DIRECT
+- domain_suffix:
+    match: apple.com
+    policy: DIRECT
+- domain_suffix:
+    match: apple.com.cn
+    policy: DIRECT
+- domain_suffix:
+    match: itunes.com
+    policy: DIRECT
+- domain_suffix:
+    match: me.com
+    policy: DIRECT
+- domain_wildcard:
+    match: ipod.*
+    policy: DIRECT
+- domain_wildcard:
+    match: imac.*
+    policy: DIRECT
+- domain_wildcard:
+    match: iphone.*
+    policy: DIRECT
+- domain_wildcard:
+    match: ipad.*
+    policy: DIRECT
+- domain_wildcard:
+    match: ipadair.*
+    policy: DIRECT
+- domain_wildcard:
+    match: ipadmini.*
+    policy: DIRECT
+- domain_wildcard:
+    match: macbook.*
+    policy: DIRECT
+- domain_wildcard:
+    match: macbookair.*
+    policy: DIRECT
+- domain_wildcard:
+    match: macbookpro.*
+    policy: DIRECT
+- ip_cidr:
+    match: 17.0.0.0/8
+    policy: no-resolve
+- ip_cidr:
+    match: 63.92.224.0/19
+    policy: no-resolve
+- ip_cidr:
+    match: 65.199.22.0/23
+    policy: no-resolve
+- ip_cidr:
+    match: 139.178.128.0/18
+    policy: no-resolve
+- ip_cidr:
+    match: 144.178.0.0/19
+    policy: no-resolve
+- ip_cidr:
+    match: 144.178.36.0/22
+    policy: no-resolve
+- ip_cidr:
+    match: 144.178.48.0/20
+    policy: no-resolve
+- ip_cidr:
+    match: 192.35.50.0/24
+    policy: no-resolve
+- ip_cidr:
+    match: 198.183.17.0/24
+    policy: no-resolve
+- ip_cidr:
+    match: 205.180.175.0/24
+    policy: no-resolve
+- domain:
+    match: apps.apple.com
+    policy: DIRECT
+- domain:
+    match: iosapps.itunes.apple.com
+    policy: DIRECT
+- domain:
+    match: osxapps.itunes.apple.com
+    policy: DIRECT
+- domain_suffix:
+    match: appsto.re
+    policy: DIRECT
+- domain_suffix:
+    match: mzstatic.com
+    policy: DIRECT
+- domain_suffix:
+    match: adcdownload.apple.com
+    policy: DIRECT
+- domain_suffix:
+    match: developer.apple.com
+    policy: DIRECT
+- domain_keyword:
+    match: icoudo
+    policy: DIRECT
+- domain_keyword:
+    match: icoudos
+    policy: DIRECT
+- domain_keyword:
+    match: icloud.com.akadns.net
+    policy: DIRECT
+- domain_suffix:
+    match: apple-cloudkit.com
+    policy: DIRECT
+- domain_suffix:
+    match: apple-mapkit.com
+    policy: DIRECT
+- domain_suffix:
+    match: apple-livephotoskit.com
+    policy: DIRECT
+- domain_suffix:
+    match: appldnld.apple.com
+    policy: DIRECT
+- domain_wildcard:
+    match: init*.push.apple.com
+    policy: DIRECT
+- domain_wildcard:
+    match: init*.push-apple.com.akadns.net
+    policy: DIRECT
