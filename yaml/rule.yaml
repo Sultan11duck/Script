@@ -1,0 +1,14 @@
+dns: {}
+rules:
+- default:
+    policy: ⏩
+- and:
+    match:
+    - protocol:
+        match: ''
+    - protocol:
+        match: quic
+    - protocol:
+        match: udp
+    policy: 微信
+    disabled: true
